@@ -75,4 +75,12 @@ public class PropsUtil {
 
         return properties;
     }
+
+    public static Properties getProducerWithMultipleBrokersProperties() {
+        Properties properties = new Properties();
+        properties.put("bootstrap.servers", "localhost:9092,localhost:9094,localhost:9095");
+        properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        return properties;
+    }
 }
