@@ -1,0 +1,23 @@
+{
+  "namespace": "org.example.avro",
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {
+      "name": "customerName",
+      "type": "string"
+    },
+    {
+      "name": "product",
+      "type": "string"
+    },
+    {
+      "name": "lineType",
+      "type": "string"
+    },
+    {
+      "name": "quantity",
+      "type": "int"
+    }
+  ]
+}
